@@ -114,6 +114,7 @@
 		72DDF75A16E7485F00887646 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DDF75916E7485F00887646 /* Foundation.framework */; };
 		72DDF75C16E7485F00887646 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DDF75B16E7485F00887646 /* CoreGraphics.framework */; };
 		72DDF76416E7485F00887646 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DDF76316E7485F00887646 /* main.m */; };
+		891AAD7C2660C666001FD504 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891AAD7B2660C666001FD504 /* Launch Screen.storyboard */; };
 		8AED2D3082E6B1455F1515C4 /* libPods-OpenShop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFCD2F26093F962D2F69F999 /* libPods-OpenShop.a */; };
 		A1D4C13F1817D70C0093ED50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D4C13E1817D70C0093ED50 /* Images.xcassets */; };
 		A1DE2E661834D2B1003C7FA4 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DE2E651834D2B1003C7FA4 /* ImageIO.framework */; };
@@ -526,6 +527,7 @@
 		72DDF75F16E7485F00887646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72DDF76316E7485F00887646 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		72DDF76516E7485F00887646 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Prefix.pch; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		891AAD7B2660C666001FD504 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		A1805ED6182A886000B3BB94 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		A1D4C13E1817D70C0093ED50 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A1DE2E651834D2B1003C7FA4 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
@@ -1399,6 +1401,7 @@
 				72DDF76316E7485F00887646 /* main.m */,
 				72DDF76516E7485F00887646 /* Prefix.pch */,
 				7253B0D31769C4AC004C6554 /* Localizable.strings */,
+				891AAD7B2660C666001FD504 /* Launch Screen.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1986,6 +1989,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				Base,
 				cs,
 			);
@@ -2011,6 +2015,7 @@
 				AD9BA5E11C887AB100221C82 /* Roboto-Regular.ttf in Resources */,
 				AD88A106211824630001C20B /* GoogleService-Info.plist in Resources */,
 				7253B0D11769C4AC004C6554 /* Localizable.strings in Resources */,
+				891AAD7C2660C666001FD504 /* Launch Screen.storyboard in Resources */,
 				BBBDC1B01C4298D500B629A4 /* BFLoadingCollectionReusableView.xib in Resources */,
 				A1D4C13F1817D70C0093ED50 /* Images.xcassets in Resources */,
 				BBBA07031C3AFBC600B97C6D /* BFTableViewLoadingHeaderFooterView.xib in Resources */,
@@ -2055,7 +2060,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-OpenShop/Pods-OpenShop-resources.sh",
 				"${PODS_ROOT}/IDMPhotoBrowser/Classes/IDMPhotoBrowser.bundle",
 				"${PODS_ROOT}/IDMPhotoBrowser/Classes/IDMPBLocalizations.bundle",
 				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/DefaultTheme/slider-default-handle-highlighted.png",
@@ -2120,7 +2125,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenShop/Pods-OpenShop-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BBF891C9857A100333D99800 /* [CP] Check Pods Manifest.lock */ = {
@@ -2651,7 +2656,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = businessfactory.OpenShopUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = OpenShop;
 				USES_XCTRUNNER = YES;
 			};
@@ -2682,7 +2687,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = businessfactory.OpenShopUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = OpenShop;
 				USES_XCTRUNNER = YES;
 			};
@@ -2806,7 +2811,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = businessfactory.OpenShopUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = OpenShop;
 				USES_XCTRUNNER = YES;
 			};

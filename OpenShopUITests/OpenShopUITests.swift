@@ -26,7 +26,7 @@ class OpenShopUITests: XCTestCase {
     }
     
     func testScreenshots() {
-        XCUIDevice.shared().orientation = .portrait
+        XCUIDevice.shared.orientation = .portrait
         let app = XCUIApplication()
         let existsPredicate = NSPredicate(format: "exists == 1")
         
@@ -47,7 +47,7 @@ class OpenShopUITests: XCTestCase {
             snapshot("Login")
         
             XCUIApplication().buttons["EMAIL"].tap()
-            let eMailTextField = app.textFields["E-mail"]
+            let eMailTextField = app.textFields["Email"]
             eMailTextField.tap()
             eMailTextField.typeText(loginEmail)
             let passwordSecureTextField = app.secureTextFields["Password"]
